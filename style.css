@@ -337,7 +337,7 @@ body {
 		/*Bosses deo*/
 
 #bossestitle{
-    font-size: 23px;
+    font-size: 30px;
     color: black;
     text-align: center;
     padding-top: 50px;
@@ -537,8 +537,7 @@ body {
 .galleryrow img:hover{
 	transform: scale(1.1);
 	filter: grayscale(0%);
-	transition: ease;
-	transition-duration: 0.3s;
+	transition: 0.3s ease;
 }
 
 	/*About me and Contact strana*/
@@ -595,7 +594,7 @@ body {
 	background-image: url(slike/contactbg.jpg);
 	width: 100%;
 }
-#contact h1{
+#contact h2{
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 50px;
