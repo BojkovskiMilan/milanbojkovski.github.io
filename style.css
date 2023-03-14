@@ -1,0 +1,812 @@
+*{
+	font-family: 'Inter', Georgia;
+	margin:0px;
+	padding:0px;
+}
+ 	/*Heder*/
+
+header {
+	height: 80px;
+	width: 100%;
+	background-color: #242629;
+	position: fixed;
+	padding: 15px;
+	z-index: 2;
+	display: inline;  
+	overflow: hidden;
+	animation-name: fadein;
+	animation-duration: 1s; 
+}
+
+#logo{
+	width: 100px;
+	height: 70px;
+	float: left;
+	padding: 8px 0px 0px 100px;
+	position:relative;
+}
+
+#logo img{
+	width:100%;
+	height:100%;
+	transition: all .5s ease;
+}
+#logo img:hover{
+	transform: scale(1.1);
+}
+
+#logoname {
+	float:left;
+	padding: 17px 0px 0px 10px;
+	position:relative;
+}
+#logoname a:hover {
+	color:#facd19;
+}
+#logoname a {
+	text-decoration: none;
+	font-size: 35px;
+	font-weight: bold;
+	color: #dedfe0;
+	letter-spacing: 1px;
+	font-style: italic;
+	transition: color .5s ease;
+}
+
+nav {
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 14px;
+}
+nav ul{
+	list-style:none;
+	float: right;
+	padding: 20px 20px 0px 0px;
+	position:relative;
+}
+nav ul li{
+	display: inline;
+	text-align: center;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #dedfe0;
+	font-size: 25px;
+	margin-right: 50px;
+}
+nav ul li a:hover{
+	background-color: #806419;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.active a{
+	color: #facd19;
+}
+
+
+	/*Pocetna strana*/
+
+		/*Body*/
+
+body { 
+	height: 125vh;  
+	margin-top: 0px;  
+	background-size: cover;  
+	font-family: sans-serif; 
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+		/*Naslov pocetne strane*/
+
+.poehome{
+	height: 800px;
+	width: 100%;
+	background-size: cover;
+}
+#poe_home h1{
+	text-align: center;
+	padding-top: 330px;
+	font-size: 90px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	cursor:pointer;
+	font-style:italic;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+#poe_home p{
+	text-align: center;
+	font-size: 35px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	margin-top: 45px;
+	font-weight: bold;
+	transition: color .5s ease;
+	cursor:pointer;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+#poe_home p:hover{
+	color: #facd19;
+}
+#poe_home{
+	background-image: url('slike/poebg.jpg');
+}
+
+.cleaner{
+	clear: both;
+}
+
+		/*What is Path of Exile deo*/
+
+#top {
+	background-color: #242629;
+	padding-bottom: 50px;
+	border-top: dotted thin white;
+	border-bottom: dotted thin white;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+ .exalted {
+	height:350px;
+	width:95%;
+	padding-bottom: 30px;
+	transition: all .3s ease;
+ }
+ .exalted:hover{
+	transform: scale(1.03);
+	z-index: 1;
+ }
+ 
+.podnaslov h2{
+	font-size: 50px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 50px;
+	margin-bottom: 30px;
+	color: #ffffff;
+	transition: color .5s ease;
+	animation-name: fadein;
+	animation-duration: 1s;
+}	
+.podnaslov h2:hover{
+	color: #facd19;
+}	
+.podnaslov hr{
+    width: 30%;
+    margin: 10px auto;
+    border: 1px solid white;
+}
+
+.tekst {
+	font-size: 22px;
+	text-align: center;
+	color: #b5b5b5;
+	height:250px;
+}
+
+.tekst a{
+	text-decoration: none;
+}
+
+.tekst a:link{
+	color: #ffffff;
+}
+
+.tekst a:visited{
+	color: #facd19;
+}
+
+.tekst a:hover{
+	color: #806419;
+}
+
+#tekst1{
+	margin:50px auto;
+	width:80%;
+}
+#tekst2 {
+	margin:50px auto;
+	width:80%;
+}
+
+		/*Skill Tree deo*/
+
+#middle {
+	background-image: url('slike/skilltree.jpeg');
+	padding-bottom: 150px;
+	padding-top:30px;
+	width:100%;
+}
+
+#tekst3 {
+	margin-top: 50px;
+	margin: 0 auto;
+	height: 135px;
+	background-color: #242629;
+	width:50%;
+	border: solid white;
+}
+
+		/*Ascendancies deo*/
+
+#bottom {
+	background-color:#242629;
+	border-top: dotted thin white;
+	border-bottom: dotted thin white;
+	
+}
+
+#slideshow {
+	overflow: hidden;
+	height: 70%;
+	width: 728px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	border: double white;
+}
+.slide {
+	float: left;
+	height: 70%;
+	width: 728px;
+}
+.slide-wrapper {
+	width: calc(728px * 7);
+	animation: slide 30s ease infinite;
+}
+
+#tekst4 {
+	padding-top: 50px;
+	margin: 0 auto;
+	height: 150px;
+	width:70%;
+}
+
+		/*Reviews deo*/
+
+#reviews {
+	background-image: url('slike/poereviews.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100%;
+	padding-bottom:500px;
+}
+
+#tekst5 {
+	margin: 0 auto;
+	margin-top:100px;
+	height: 150px;
+	width:70%;
+	font-size:30px;
+	color: white;
+	font-style: italic;
+}
+#tekst6 {
+	margin: 0 auto;
+	margin-top:130px;
+	height: 150px;
+	width:70%;
+	font-size:30px;
+	color:white;
+	font-style: italic;
+}
+
+#stars img{
+	margin-top: 30px;
+	width:40%;
+	height:150px;
+	opacity: 75%;
+}
+
+	/*Endgame strana*/
+
+		/*Naslov Endgame strane*/
+
+#endgame {
+	background-image: url('slike/atlas.jpg');
+}
+
+#endgame h1{
+	text-align: center;
+	padding-top: 390px;
+	font-size: 70px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	font-style: italic;
+	cursor: pointer;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+		/*Bosses deo*/
+
+#bossestitle{
+    font-size: 23px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    transition: color .5s ease;
+    cursor: pointer;
+}
+#bossestitle:hover{
+    color: #facd19;
+}
+
+#endgamebosses hr{
+    width: 30%;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+.bosspanel{
+    width: 90%;
+    display: flex;
+    margin: 45px 0;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px #141414;
+    transition: all .3s ease;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.bosspanel img:hover{
+    transform: scale(1.03); 
+}
+.bosspanel img{
+    width: 50%;
+	transition: all .3s ease;
+}
+.bosspanel:nth-child(odd) img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.bosspanel:nth-child(even) img{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.bosscontent{
+    padding: 20px;
+}
+.bosscontent h2{
+    font-size: 29px;
+    color: black;
+    margin: 20px 0;
+    transition: color .5s ease;
+    cursor: pointer;
+}
+.bosscontent h2:hover{
+	color: #806419;
+}
+.bosscontent p{
+    margin: 10px 0;
+    text-align: left;
+    line-height: 1.5;
+	font-size: 20px;
+}
+
+	/*Updates strana*/
+		
+		/*Naslov Updates strane*/
+
+#versionhistory {
+	background-image: url('slike/versionhistorybg.jpg');
+}
+#versionhistory h1{
+	text-align: center;
+	padding-top: 390px;
+	font-size: 70px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	font-style: italic;
+	cursor: pointer;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+
+#updatehistory {
+	width:100%;
+	background-image: url('slike/updatesbg.jpg');
+	height:1000px;
+}
+	
+		/*Beta and Expansions deo*/
+
+#betatorelease{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align:left;
+	margin:0 auto;
+	width: 50%;
+	margin-top:75px;
+}
+#betatorelease p{
+	padding-top:40px;
+}
+
+#expansions{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align:left;
+	margin:0 auto;
+	width: 50%;
+	margin-top:75px;
+}
+		
+		/*Leagues deo*/
+
+#leagues{
+	background-image: url('slike/leaguesbg.jpg');
+	height: 900px;
+	width:100%;
+}
+
+#leaguehistory{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align:center;
+	margin:0 auto;
+	width: 50%;
+	margin-top:75px;
+	}
+	
+#leagueimages {
+	display:flex;
+	width:100%;
+	margin:0 auto;
+	align-items:center;
+	justify-content: space-evenly;
+	justify-content: space-between;
+	text-align: center;
+}
+#leagueimages img {
+	width:90%;
+	box-shadow: 1px 1px 5px #141414;
+	transition: all .3s ease;
+	border-radius:20px;
+}
+#leagueimages img:hover{
+	filter: brightness(130%); 
+}
+
+	/*Gallery strana*/
+
+		/*Naslov Gallery strane*/
+
+#gallerypage{
+	background-image: url(slike/gallerybg.jpg);
+	height:800px;
+}
+#gallerypage h1{
+	text-align: center;
+	padding-top: 390px;
+	font-size: 70px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	font-style: italic;
+	cursor: pointer;
+	animation-name: fadein;
+	animation-duration: 1s;
+} 
+
+		/*Galerija*/
+
+#gallery{
+	width: 100%;
+	height:2000px;
+	background-image: url(slike/gallerybackground.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.galleryrow{
+	display:flex;
+	justify-content: space-evenly;
+	text-align: center;
+	margin:0 auto;
+}
+.galleryrow img{
+	width:35%;
+	margin:0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	filter: grayscale(100%);
+	transition-duration: 0.3s;
+	box-shadow: 1px 1px 5px #141414;
+	border-radius: 20px;
+}
+.galleryrow img:hover{
+	transform: scale(1.1);
+	filter: grayscale(0%);
+	transition: ease;
+	transition-duration: 0.3s;
+}
+
+	/*About me and Contact strana*/
+
+		/*O autoru*/
+
+#aboutme{
+	background-image: url(slike/aboutmebg.jpg);
+	height:100%;
+}
+
+#aboutmestuff{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 25px;
+	width:50%;
+	margin: 0 auto;
+}
+#aboutmestuff h1{
+	text-align: center;
+	padding-top: 200px;
+	font-size: 70px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	font-style: italic;
+	cursor: pointer;
+	animation-name: fadein;
+	animation-duration: 1s;
+} 
+#aboutmestuff img{
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #141414;
+	transition: all .3s ease;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+#aboutmestuff p{
+	font-size: 22px;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px #000000;
+	animation-name: fadein;
+	animation-duration: 1s;
+}
+#aboutmestuff img:hover {
+	box-shadow: 0 5px 15px white;
+}
+
+		/*Contact*/
+
+#contact{
+	background-image: url(slike/contactbg.jpg);
+	width: 100%;
+}
+#contact h1{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	font-size: 70px;
+	color: #ffffff;
+	text-shadow: 2px 2px #000000;
+	font-style: italic;
+	cursor: pointer;
+}
+
+form {
+	box-sizing: border-box;
+	padding: 2rem;
+	border-radius: 1rem;
+	background-color: #242629;
+	border: 4px solid hsl(0, 0%, 90%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	gap: 2rem;
+	width:50%;
+	color:white;
+ }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 400px;
+	height:30px;
+}
+
+textarea{
+	width: 400px;
+	height:100px;;
+}
+
+button{
+	width:50px;
+	height:30px;
+}
+  
+	/*Futer*/
+
+footer{
+	width: 100%;
+	text-align: center;
+	background-color: #242629;
+}
+.footerwrapper{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	justify-content: space-evenly;
+	justify-content: center; 
+	width:70%;
+	margin:0px auto;
+}
+.footerwrapper h4{
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: #b5b5b5;
+}
+
+footer p{
+	font-size: 20px;
+	color: #b5b5b5;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer .contact{
+	width: 30%;
+}
+
+footer h4{
+	transition: all .3s ease;
+	cursor:pointer;
+}
+
+footer h4:hover{
+	transform: scale(1.1);
+}
+
+footer p{
+	margin: 15px 0px;
+}
+
+#logofooter{
+	width: 30%;
+	margin:0px auto;
+}
+#logofooter img{
+	transition: all .3s ease;
+}
+#logofooter img:hover{
+	transform: scale(1.03);
+}
+.wrapper .icon{
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+}
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .rss:hover,
+.wrapper .rss:hover .tooltip,
+.wrapper .rss:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .sitemap:hover,
+.wrapper .sitemap:hover .tooltip,
+.wrapper .sitemap:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+	/*Animacije*/
+
+@keyframes slide {
+	12,5% {
+	margin-left: 0px;
+	}	
+	25% {
+	margin-left: calc(-728px * 1);
+	}
+	37,5% {
+	margin-left: calc(-728px * 2);
+	}
+	50% {
+	margin-left: calc(-728px * 3);
+	}
+	62,5%{
+	margin-left: calc(-728px * 4);
+	}
+	75%{
+	margin-left: calc(-728px * 5);
+	}
+	87,5%{
+	margin-left: calc(-728px * 6);
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
